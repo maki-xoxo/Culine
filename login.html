@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Culine — Sign in</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css\style.css">
+<link rel="stylesheet" href="css\login.css">
+</head>
+<body class="login-body">
+
+  <div class="produce-bg" aria-hidden="true">
+    <span class="blob blob-tomato"></span>
+    <span class="blob blob-greens"></span>
+    <span class="blob blob-squash"></span>
+    <span class="blob blob-honey"></span>
+    <span class="blob blob-greens2"></span>
+  </div>
+
+  <a class="admin-login-link" href="admin.html">Admin sign-in</a>
+
+  <main class="fb-wrap">
+
+    <div class="fb-left">
+      <div class="fb-logo">
+        <span class="brand-mark">CL</span>
+        <span class="fb-brand-name">Culine</span>
+      </div>
+      <p class="fb-tagline">Fresh groceries from local farms and vendors — order in minutes, delivered to your door.</p>
+    </div>
+
+    <div class="fb-right">
+      <div class="login-card">
+
+        <form class="login-form" id="loginForm">
+          <label class="field">
+            <span class="field-label">Email or username</span>
+            <input type="text" id="loginIdentifier" placeholder="you@example.com or username" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Password</span>
+            <input type="password" id="loginPassword" placeholder="••••••••" required>
+          </label>
+          <p class="field-error" id="loginError"></p>
+          <button class="submit-btn" type="submit">Sign in</button>
+          <a class="forgot-link" href="#">Forgotten password?</a>
+        </form>
+
+        <hr class="divider" id="loginDivider">
+
+        <button class="create-account-btn" id="tabRegister" type="button">Create new account</button>
+
+        <form class="login-form" id="registerForm" hidden>
+          <label class="field">
+            <span class="field-label">Email</span>
+            <input type="email" id="registerEmail" placeholder="you@example.com" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Username</span>
+            <input type="text" id="registerUsername" placeholder="Pick a username" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Password</span>
+            <input type="password" id="registerPassword" placeholder="••••••••" required>
+          </label>
+          <label class="field">
+            <span class="field-label">Confirm password</span>
+            <input type="password" id="registerConfirmPassword" placeholder="••••••••" required>
+          </label>
+          <p class="field-error" id="registerError"></p>
+          <button class="submit-btn" type="submit">Register</button>
+        </form>
+
+        <p class="login-foot" id="footRegister" hidden>
+          <a href="#" id="goLogin">Back to sign in</a>
+        </p>
+
+      </div>
+    </div>
+
+  </main>
+
+<script src="script\login.js"></script>
+</body>
+</html>
