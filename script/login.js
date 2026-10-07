@@ -59,7 +59,7 @@ function handleRegister(event) {
 // Saves the registration details as a downloadable .txt file (opens like Notepad).
 function downloadRegistrationNote(username, email) {
   const contents =
-    'Greenlist — New Account\n' +
+    'Culine — New Account\n' +
     '------------------------\n' +
     'Username: ' + username + '\n' +
     'Email: ' + email + '\n' +
